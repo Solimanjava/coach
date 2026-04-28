@@ -1,0 +1,71 @@
+:root {
+    --main-gold: #c5a059;
+    --dark-blue: #0a192f;
+    --light-bg: #f4f7f6;
+    --white: #ffffff;
+    --whatsapp-green: #25d366;
+}
+
+body {
+    margin: 0; font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--light-bg); color: var(--dark-blue);
+}
+
+header {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, #172a45 100%);
+    color: var(--white); padding: 40px 20px; text-align: center;
+}
+
+.profile-frame {
+    width: 150px; height: 150px; border-radius: 50%;
+    border: 4px solid var(--main-gold); margin: 0 auto 20px;
+    overflow: hidden; background: #ccc;
+}
+
+.profile-img { width: 100%; height: 100%; object-fit: cover; }
+
+.contact-bar {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    gap: 15px; margin-top: 20px; font-size: 0.9rem;
+}
+
+.contact-bar a { color: var(--white); text-decoration: none; padding: 5px 10px; border-radius: 5px; background: rgba(255,255,255,0.1); }
+
+.whatsapp-btn { background-color: var(--whatsapp-green) !important; font-weight: bold; }
+
+.main-nav {
+    position: sticky; top: 0; background: var(--white);
+    display: flex; justify-content: center; padding: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 100;
+}
+
+.main-nav button {
+    margin: 0 5px; padding: 10px 15px; border: none;
+    background: none; color: var(--dark-blue); font-weight: bold;
+    cursor: pointer; border-bottom: 3px solid transparent;
+}
+
+.main-nav button:hover { color: var(--main-gold); border-bottom-color: var(--main-gold); }
+
+.content-area { padding: 20px; max-width: 900px; margin: 0 auto; }
+
+.week-card { background: var(--white); margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+
+.week-header {
+    padding: 15px; background: #eef2f3; cursor: pointer;
+    display: flex; justify-content: space-between; align-items: center;
+    border-radius: 8px; font-weight: bold;
+}
+
+.week-body { display: none; padding: 15px; overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; min-width: 650px; }
+th { background: var(--dark-blue); color: var(--white); padding: 12px; }
+td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+
+.exercise-box { text-align: center; }
+.exercise-img { 
+    width: 100%; max-width: 150px; height: 100px; 
+    background: #eee; margin-bottom: 5px; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #999;
+}
